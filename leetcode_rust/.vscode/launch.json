@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(Windows) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "rust build",
+            "program": "${fileDirname}/../target/debug/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/Scoop/apps/mingw/current/bin/gdb.exe",
+            "externalConsole": false
+        }
+    ]
+}

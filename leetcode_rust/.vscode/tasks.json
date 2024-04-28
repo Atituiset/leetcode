@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+      {
+        "type": "shell",
+        "command": "echo ${workspaceFolder}/target/debug/${fileBasenameNoExtension}.exe",
+        "label": "echo"
+      },
+      {
+          "type": "shell",
+          "command": "rustc",
+          "args": [
+            "-g",
+            "${file}",
+            "-o",
+            "${fileDirname}/../target/debug/${fileBasenameNoExtension}.exe"
+          ],
+          "group": "build",
+          "label": "rust build"
+      }
+  ]
+}
